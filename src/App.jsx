@@ -1,4 +1,5 @@
-import RoleSelectionScreen from './components/RoleSelectionScreen';
+import React from "react";
+import RoleSelectionScreen from "./components/RoleSelectionScreen";
 
 function App() {
   return <RoleSelectionScreen />;
