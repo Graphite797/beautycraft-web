@@ -16,7 +16,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-screen bg-[#fdf8f4]">
+    <div className="h-screen bg-[#fdf8f4] pt-safe">
       <RoleSelectionScreen />
     </div>
   );

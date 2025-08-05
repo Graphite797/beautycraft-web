@@ -9,8 +9,11 @@
   font-style: normal;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "SF Pro Rounded", sans-serif;
-  background-color: #eae1ca; /* fallback фон, если что-то пойдёт не так */
+  background-color: #eae1ca;
+  overscroll-behavior-y: contain; /* 👈 Отключает свайп вниз */
 }

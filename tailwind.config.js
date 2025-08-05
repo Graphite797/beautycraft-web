@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         sf: ['"SF Pro Rounded"', 'sans-serif'],
       },
+      padding: {
+        safe: "env(safe-area-inset-top)", // 👈 нужно для pt-safe
+      },
     },
   },
   plugins: [],
