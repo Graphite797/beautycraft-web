@@ -21,7 +21,7 @@ export default function RoleSelectionScreen() {
         <div
           onClick={() => setSelected("client")}
           className={`flex flex-col items-center cursor-pointer transition-all rounded-xl overflow-hidden ${
-            selected === "client" ? "ring-4 ring-[#fe99a9]" : ""\          }`}
+            selected === "client" ? "ring-4 ring-[#fe99a9]" : ""  }`}
         >
           <img
             src="/icons/client.png"
@@ -35,7 +35,7 @@ export default function RoleSelectionScreen() {
         <div
           onClick={() => setSelected("master")}
           className={`flex flex-col items-center cursor-pointer transition-all rounded-xl overflow-hidden ${
-            selected === "master" ? "ring-4 ring-[#fe99a9]" : ""\          }`}
+            selected === "master" ? "ring-4 ring-[#fe99a9]" : ""  }`}
         >
           <img
             src="/icons/master.png"
