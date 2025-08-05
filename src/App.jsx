@@ -1,19 +1,23 @@
-import { useEffect } from 'react';
-import RoleSelectionScreen from './components/RoleSelectionScreen';
+// 📄 src/App.jsx
+import React, { useEffect } from "react";
+import RoleSelectionScreen from "./components/RoleSelectionScreen";
 
-function App() {
+export default function App() {
   useEffect(() => {
-    if (window.Telegram && window.Telegram.WebApp) {
-      window.Telegram.WebApp.expand();
-      window.Telegram.WebApp.ready();
-    }
+    const preventSwipeDismiss = (e) => {
+      if (e.cancelable) e.preventDefault();
+    };
+
+    document.addEventListener("touchmove", preventSwipeDismiss, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchmove", preventSwipeDismiss);
+    };
   }, []);
 
   return (
-    <div className="App">
+    <div className="h-screen bg-[#fdf8f4]">
       <RoleSelectionScreen />
     </div>
   );
 }
-
-export default App;
